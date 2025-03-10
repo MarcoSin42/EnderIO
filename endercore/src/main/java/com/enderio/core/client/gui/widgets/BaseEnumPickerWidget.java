@@ -97,7 +97,7 @@ public abstract class BaseEnumPickerWidget<T extends Enum<T>> extends EnderButto
 
     private void setValue(T value) {
         setter.accept(value);
-        updateTooltip(value);
+        updateTooltip(getValue());
     }
 
     private Vector2i calculateFirstPosition(T icon, int amount) {
